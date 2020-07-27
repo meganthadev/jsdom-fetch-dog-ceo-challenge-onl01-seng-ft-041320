@@ -23,7 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
   dogSelect.addEventListener("change", (event) => {
     makeFetch()
     .then(res => {
-      let dogBreedsArr = Object.keys(response.message);
+      let dogBreedsArr = Object.keys(res.message);
+      let filteredArray = dogBreedsArr.filter(breed => {
+        return breed.startsWith(event.target.value)
+      })
       console.log(event.target.value);
     });
     
@@ -31,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   
 //DOM Content Loaded
-})
+});
 
 function makeFetch() {
   return fetch("https://dog.ceo/api/breeds/list/all")
