@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   dogSelect.addEventListener("change", (event) => {
     makeFetch()
     .then(res => {
-      console.log(event);
+      console.log(event.target.value);
     });
     
   });
