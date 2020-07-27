@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
  .then(handleImageAppending)
 
 
-  fetch("https://dog.ceo/api/breeds/list/all")
-  .then(response => response.json())
+  makeFetch()
   .then(response => {
     let dogBreedsArr = Object.keys(response.message)
     dogBreedsArr.forEach(addLI)
