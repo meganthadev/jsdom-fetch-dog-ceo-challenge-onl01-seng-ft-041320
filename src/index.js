@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
   dogUL.addEventListener("click", function(event) {
     if (event.target.tagName === "LI") {
       console.log(event.target);
+    }
   })
   
 //DOM Content Loaded
