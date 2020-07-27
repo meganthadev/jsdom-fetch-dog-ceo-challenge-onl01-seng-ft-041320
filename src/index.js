@@ -17,16 +17,16 @@ document.addEventListener("DOMContentLoaded", function() {
     if (event.target.dataset.info === "breed") {
       event.target.style.color = "purple"
     }
-  })
+  });
   
   let dogSelect = document.getElementById('breed-dropdown')
   dogSelect.addEventListener("change", (event) => {
     makeFetch()
     .then(res => {
       console.log(res)
-    })
+    });
     
-  })
+  });
   
   
 //DOM Content Loaded
