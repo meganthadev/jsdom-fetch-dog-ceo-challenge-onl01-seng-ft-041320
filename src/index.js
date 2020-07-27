@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
     dogBreedsArr.forEach(addLI)
   })
   
-  let liToFind = document.querySelector("li")
+  dogUL.addEventListener("click", function(event) {
+    console.log(event)
+  })
   
 //DOM Content Loaded
 })
