@@ -24,14 +24,15 @@ document.addEventListener("DOMContentLoaded", function() {
   let dogSelect = document.getElementById('breed-dropdown')
   dogSelect.addEventListener("change", (event) => {
     fetch("https://dog.ceo/api/breeds/list/all")
-  .then(response => response.json())
+    .then(response => response.json())
     
-    (event.target.value);
   })
   
   
 //DOM Content Loaded
 })
+
+function 
    
  function handleImageAppending(jsonObject) {
   let dogImageContainer = document.getElementById('dog-image-container')
