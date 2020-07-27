@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   })
   
+  let dogSelect = document.getElementById('breed-dropdown')
+  
+  
 //DOM Content Loaded
 })
    
