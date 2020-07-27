@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
   
   let dogSelect = document.getElementById('breed-dropdown')
   dogSelect.addEventListener("change", (event) => {
+    fetch("https://dog.ceo/api/breeds/list/all")
+  .then(response => response.json())
     
     (event.target.value);
   })
