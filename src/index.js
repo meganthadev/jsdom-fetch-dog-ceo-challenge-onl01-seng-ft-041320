@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
         return breed.startsWith(event.target.value);
       });
        dogUL.innerHTML = ""
-      filteredArray.forEach(breed) => {
+       
+      filteredArray.forEach((breed) => {
         dogUL.innerHTML += `<li data-info="breed">${breed}</li>`
     });
     
