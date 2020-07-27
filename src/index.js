@@ -32,7 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
 //DOM Content Loaded
 })
 
-function 
+function makeFetch() {
+  return fetch("https://dog.ceo/api/breeds/list/all")
+    .then(response => response.json())
+}
    
  function handleImageAppending(jsonObject) {
   let dogImageContainer = document.getElementById('dog-image-container')
