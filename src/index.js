@@ -30,8 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
       })
        dogUL.innerHTML = ""
        
-      filteredArray.forEach((breed) => {
-        dogUL.innerHTML += `<li data-info="breed">${breed}</li>`
+       filteredArray.forEach(addLI)
     });
     
   });
