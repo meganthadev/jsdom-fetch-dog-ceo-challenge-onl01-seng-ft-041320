@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function() {
   dogSelect.addEventListener("change", (event) => {
     makeFetch()
     .then(res => {
-      let dogBreedsArr = Object.keys(res.message)
+      let dogBreedsArr = Object.keys(res.message);
       
       let filteredArray = dogBreedsArr.filter(breed => {
-        return breed.startsWith(event.target.value)
-      })
+        return breed.startsWith(event.target.value);
+      });
       console.log(event.target.value);
     });
     
