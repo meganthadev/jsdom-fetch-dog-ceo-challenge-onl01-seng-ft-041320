@@ -28,7 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
       let filteredArray = dogBreedsArr.filter(breed => {
         return breed.startsWith(event.target.value);
       });
-      console.log(event.target.value);
+       dogUL.innerHTML = ""
+      filteredArray.forEach
     });
     
   });
