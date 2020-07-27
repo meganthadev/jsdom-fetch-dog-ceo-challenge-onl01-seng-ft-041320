@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   dogUL.addEventListener("click", function(event) {
     if (event.target.dataset.info === "breed") {
-      
+      event.target.style.color = "purple"
     }
   })
   
