@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
  .then(response => response.json())
  .then(handleImageAppending)
 
-
   makeFetch()
   .then(response => {
     let dogBreedsArr = Object.keys(response.message)
