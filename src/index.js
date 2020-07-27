@@ -60,5 +60,4 @@ function makeFetch() {
  function addLI(breed){
   let dogUL = document.querySelector("#dog-breeds")
   dogUL.innerHTML += `<li data-info="breed">${breed}!</li>`
-}
- 
+};
