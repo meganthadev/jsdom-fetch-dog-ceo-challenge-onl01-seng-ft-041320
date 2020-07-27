@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
   })
   
   dogUL.addEventListener("click", function(event) {
-    if (event.target.tagName === "LI") {
+    if (event.target.dataset.info === "LI") {
       console.log(event.target);
     }
   })
