@@ -9,21 +9,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
   makeFetch()
   .then(response => {
-    let dogBreedsArr = Object.keys(response.message)
-    dogBreedsArr.forEach(addLI)
-  })
+    let dogBreedsArr = Object.keys(response.message);
+    dogBreedsArr.forEach(addLI);
+  });
   
   dogUL.addEventListener("click", function(event) {
     if (event.target.dataset.info === "breed") {
-      event.target.style.color = "purple"
+      event.target.style.color = "purple";
     }
   });
   
-  let dogSelect = document.getElementById('breed-dropdown')
+  let dogSelect = document.getElementById('breed-dropdown');
   dogSelect.addEventListener("change", (event) => {
     makeFetch()
     .then(res => {
-      console.log(res)
+      console.log(res);
     });
     
   });
