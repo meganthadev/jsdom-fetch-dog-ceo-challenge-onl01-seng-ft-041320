@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   dogSelect.addEventListener("change", (event) => {
     makeFetch()
     .then(res => {
+      let dogBreedsArr = Object.keys(response.message);
       console.log(event.target.value);
     });
     
