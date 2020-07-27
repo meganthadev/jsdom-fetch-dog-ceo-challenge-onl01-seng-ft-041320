@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   let dogSelect = document.getElementById('breed-dropdown')
   dogSelect.addEventListener("change", (event) => {
-    console.log(event.target);
+    console.log(event.target.value);
   })
   
   
